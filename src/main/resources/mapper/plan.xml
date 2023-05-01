@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.enjoytrip.plan.mapper.PlanMapper">
+
+    <resultMap id="plan" type="planDto">
+        <result column="plan_writer" property="planWriter"/>
+        <result column="plan_title" property="planTitle"/>
+        <result column="start_date" property="startDate"/>
+        <result column="end_date" property="endDate"/>
+        <result column="reg_date" property="regDate"/>
+        <result column="scrap_count" property="scrapCount"/>
+    </resultMap>
+
+    <resultMap id="planshare" type="planShareDto">
+        <result column="share_id" property="shareId"/>
+        <result column="owner_id" property="ownerId"/>
+        <result column="participant_id" property="participantId"/>
+        <result column="plan_id" property="planId"/>
+
+    </resultMap>
+</mapper>

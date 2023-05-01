@@ -1,4 +1,4 @@
-package com.ssafy.enjoytrip.gugun.dto;
+package com.ssafy.enjoytrip.attraction.dto;
 
 public class GugunDto {
     private int gugunCode;

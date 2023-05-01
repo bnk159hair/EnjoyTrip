@@ -1,4 +1,4 @@
-package com.ssafy.enjoytrip.sido.dto;
+package com.ssafy.enjoytrip.attraction.dto;
 
 public class SidoDto {
     private int sidoCode;

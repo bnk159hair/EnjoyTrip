@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.enjoytrip.Inform.mapper.InformMapper">
+    <resultMap id="inform" type="informDto">
+        <result column="inform_id" property="informId"/>
+        <result column="inform_writer" property="informWriter"/>
+        <result column="inform_title" property="informTitle"/>
+        <result column="inform_content" property="informContent"/>
+        <result column="reg_date" property="regDate"/>
+        <result column="hits" property="hits"/>
+
+    </resultMap>
+
+</mapper>

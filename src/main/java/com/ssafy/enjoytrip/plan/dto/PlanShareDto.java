@@ -1,9 +1,10 @@
-package com.ssafy.enjoytrip.planshare.dto;
+package com.ssafy.enjoytrip.plan.dto;
 
-public class PlanshareDto {
+public class PlanShareDto {
     private int shareId;
     private String ownerId;
     private String participantId;
+    private String planId;
 
     public int getShareId() {
         return shareId;
@@ -29,12 +30,21 @@ public class PlanshareDto {
         this.participantId = participantId;
     }
 
+    public String getPlanId() {
+        return planId;
+    }
+
+    public void setPlanId(String planId) {
+        this.planId = planId;
+    }
+
     @Override
     public String toString() {
-        return "PlanshareDto{" +
+        return "PlanShareDto{" +
                 "shareId=" + shareId +
                 ", ownerId='" + ownerId + '\'' +
                 ", participantId='" + participantId + '\'' +
+                ", planId='" + planId + '\'' +
                 '}';
     }
 }

@@ -1,83 +1,84 @@
 package com.ssafy.enjoytrip.plan.dto;
 
+import com.ssafy.enjoytrip.attraction.dto.AttractionDto;
+
 import java.util.List;
 
 public class PlanDto {
-    private String plan_writer;
-    private String plan_title;
-    private String start_date;
-    private String end_date;
-    private String reg_date;
-    private int scrap_count;
+    private String planWriter;
+    private String planTitle;
+    private String startDate;
+    private String endDate;
+    private String regDate;
+    private int scrapCount;
+    private List<AttractionDto> planCards;
 
-    private List<AttractionDto> plancards;
-
-    public String getPlan_writer() {
-        return plan_writer;
+    public String getPlanWriter() {
+        return planWriter;
     }
 
-    public void setPlan_writer(String plan_writer) {
-        this.plan_writer = plan_writer;
+    public void setPlanWriter(String planWriter) {
+        this.planWriter = planWriter;
     }
 
-    public String getPlan_title() {
-        return plan_title;
+    public String getPlanTitle() {
+        return planTitle;
     }
 
-    public void setPlan_title(String plan_title) {
-        this.plan_title = plan_title;
+    public void setPlanTitle(String planTitle) {
+        this.planTitle = planTitle;
     }
 
-    public String getStart_date() {
-        return start_date;
+    public String getStartDate() {
+        return startDate;
     }
 
-    public void setStart_date(String start_date) {
-        this.start_date = start_date;
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
     }
 
-    public String getEnd_date() {
-        return end_date;
+    public String getEndDate() {
+        return endDate;
     }
 
-    public void setEnd_date(String end_date) {
-        this.end_date = end_date;
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
     }
 
-    public String getReg_date() {
-        return reg_date;
+    public String getRegDate() {
+        return regDate;
     }
 
-    public void setReg_date(String reg_date) {
-        this.reg_date = reg_date;
+    public void setRegDate(String regDate) {
+        this.regDate = regDate;
     }
 
-    public int getScrap_count() {
-        return scrap_count;
+    public int getScrapCount() {
+        return scrapCount;
     }
 
-    public void setScrap_count(int scrap_count) {
-        this.scrap_count = scrap_count;
+    public void setScrapCount(int scrapCount) {
+        this.scrapCount = scrapCount;
     }
 
-    public List<AttractionDto> getPlancards() {
-        return plancards;
+    public List<AttractionDto> getPlanCards() {
+        return planCards;
     }
 
-    public void setPlancards(List<AttractionDto> plancards) {
-        this.plancards = plancards;
+    public void setPlanCards(List<AttractionDto> planCards) {
+        this.planCards = planCards;
     }
 
     @Override
     public String toString() {
         return "PlanDto{" +
-                "plan_writer='" + plan_writer + '\'' +
-                ", plan_title='" + plan_title + '\'' +
-                ", start_date='" + start_date + '\'' +
-                ", end_date='" + end_date + '\'' +
-                ", reg_date='" + reg_date + '\'' +
-                ", scrap_count=" + scrap_count +
-                ", plancards=" + plancards +
+                "planWriter='" + planWriter + '\'' +
+                ", planTitle='" + planTitle + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", regDate='" + regDate + '\'' +
+                ", scrapCount=" + scrapCount +
+                ", planCards=" + planCards +
                 '}';
     }
 }

@@ -4,7 +4,7 @@ public class InformDto {
     private int informId;
     private String informWriter;
     private String informTitle;
-    private String infromContent;
+    private String informContent;
     private String regDate;
     private int hits;
 
@@ -32,12 +32,12 @@ public class InformDto {
         this.informTitle = informTitle;
     }
 
-    public String getInfromContent() {
-        return infromContent;
+    public String getInformContent() {
+        return informContent;
     }
 
-    public void setInfromContent(String infromContent) {
-        this.infromContent = infromContent;
+    public void setInformContent(String informContent) {
+        this.informContent = informContent;
     }
 
     public String getRegDate() {
@@ -62,9 +62,10 @@ public class InformDto {
                 "informId=" + informId +
                 ", informWriter='" + informWriter + '\'' +
                 ", informTitle='" + informTitle + '\'' +
-                ", infromContent='" + infromContent + '\'' +
+                ", informContent='" + informContent + '\'' +
                 ", regDate='" + regDate + '\'' +
                 ", hits=" + hits +
                 '}';
     }
 }
+
